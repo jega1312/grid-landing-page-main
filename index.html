@@ -26,7 +26,7 @@
   </head>
   <body>
     <nav
-      class="bg-blue-700 w-full py-7 px-7 lg:px-14 flex justify-between items-center border-b-2 border-blue-500"
+      class="bg-blue-700 w-full py-7 px-7 lg:px-14 flex justify-between items-center border-b border-blue-500"
     >
       <!-- Title -->
       <div class="flex gap-1 items-center">
@@ -38,25 +38,27 @@
       </div>
 
       <!-- Navigation Logo -->
-      <img
-        src="./assets/images/icon-menu.svg"
-        alt="icon-menu"
-        class="size-6 lg:size-7"
-      />
+      <div class="cursor-pointer">
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="icon-menu"
+          class="size-6 lg:size-7"
+        />
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <main class="w-full bg-blue-700 flex h-screen">
+    <main class="w-full bg-blue-700 flex flex-col lg:flex-row h-full">
       <!-- Left Content -->
       <div
-        class="px-7 lg:px-14 flex-1 flex flex-col justify-center gap-10 border-r-2 border-blue-500 h-full"
+        class="px-7 py-14 lg:py-0 lg:px-14 flex-1 flex flex-col justify-center gap-5 lg:gap-10 border-blue-500 border-y lg:border-x"
       >
-        <h1 class="font-inter text-white text-6xl">
-          A classroom <br />
+        <h1 class="font-inter text-white text-4xl lg:text-6xl">
+          A classroom <br class="hidden lg:block" />
           for every child.
         </h1>
 
-        <p class="font-inter text-white/75 w-[50%] text-base">
+        <p class="font-inter text-white/75 w-full lg:w-[60%] text-base">
           We fund the schools, train the teachers, and measure what works — so
           every child we reach today becomes a graduate tomorrow.
         </p>
@@ -64,10 +66,10 @@
 
       <!-- Right Content -->
       <div class="flex-1 h-full">
-        <div class="grid grid-cols-2 h-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
           <!-- Box 1 -->
           <div
-            class="flex flex-col justify-between border-2 border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
+            class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
           >
             <div class="flex justify-between items-center">
               <img src="./assets/images/icon-sparkle.svg" alt="icon-sparkle" />
@@ -86,7 +88,7 @@
 
           <!-- Box 2 -->
           <div
-            class="flex flex-col justify-between border-2 border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
+            class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
           >
             <div class="flex justify-between items-center">
               <img src="./assets/images/icon-plus.svg" alt="icon-plus.svg" />
@@ -105,7 +107,7 @@
 
           <!-- Box 3 -->
           <div
-            class="flex flex-col justify-between border-2 border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
+            class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
           >
             <div class="flex justify-between items-center">
               <img
@@ -127,7 +129,7 @@
 
           <!-- Box 4 -->
           <div
-            class="flex flex-col justify-between border-2 border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
+            class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
           >
             <div class="flex justify-between items-center">
               <img
@@ -151,7 +153,7 @@
     </main>
 
     <footer
-      class="bg-blue-700 w-full py-7 px-7 lg:px-14 flex justify-between items-center border-t-2 border-blue-500"
+      class="bg-blue-700 w-full py-7 px-7 lg:px-14 flex lg:flex-row flex-col justify-between items-start lg:items-center border-t border-blue-500"
     >
       <!-- Title -->
 
