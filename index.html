@@ -18,6 +18,11 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -42,14 +47,14 @@
         <img
           src="./assets/images/icon-menu.svg"
           alt="icon-menu"
-          class="size-6 lg:size-7"
+          class="size-6 lg:size-7 transition duration-300 ease-in-out"
           id="nav-img"
         />
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="relative z-0">
+    <div class="relative z-0 overflow-hidden">
       <aside
         class="lg:h-full w-full lg:max-w-[24%] bg-blue-700 absolute z-20 lg:right-0 hidden"
         id="nav-tab"
@@ -71,7 +76,7 @@
             Partners
           </li>
           <li
-            class="font-inter text-center text-white text-2xl hover:underline transition duration-300 ease-in-out cursor-pointer"
+            class="font-inter text-center text-white text-2xl hover:underline transition duration-300 ease-in-out cursor-pointer text-nowrap"
           >
             Annual Report
           </li>
@@ -104,77 +109,10 @@
         </div>
         <!-- Right Content -->
         <div class="flex-1 h-full">
-          <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
-            <!-- Box 1 -->
-            <div
-              class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
-            >
-              <div class="flex justify-between items-center">
-                <img
-                  src="./assets/images/icon-sparkle.svg"
-                  alt="icon-sparkle"
-                />
-                <h2 class="text-white font-inter text-2xl">2.4M</h2>
-              </div>
-              <div class="mt-40">
-                <p class="text-white font-inter text-lg">Students reached</p>
-                <p class="text-white/75 font-inter text-xs">
-                  Across 31 countries since 2011.
-                </p>
-              </div>
-            </div>
-            <!-- Box 2 -->
-            <div
-              class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
-            >
-              <div class="flex justify-between items-center">
-                <img src="./assets/images/icon-plus.svg" alt="icon-plus.svg" />
-                <h2 class="text-white font-inter text-2xl">1,284</h2>
-              </div>
-              <div class="mt-40">
-                <p class="text-white font-inter text-lg">Schools partnered</p>
-                <p class="text-white/75 font-inter text-xs">
-                  In 14 countries, from Kenya to Guatemala.
-                </p>
-              </div>
-            </div>
-            <!-- Box 3 -->
-            <div
-              class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
-            >
-              <div class="flex justify-between items-center">
-                <img
-                  src="./assets/images/icon-arrow-right.svg"
-                  alt="icon-arrow-right.svg"
-                />
-                <h2 class="text-white font-inter text-2xl">38K</h2>
-              </div>
-              <div class="mt-40">
-                <p class="text-white font-inter text-lg">Teachers trained</p>
-                <p class="text-white/75 font-inter text-xs">
-                  Equipped with modern tools and methodology.
-                </p>
-              </div>
-            </div>
-            <!-- Box 4 -->
-            <div
-              class="flex flex-col justify-between border-y lg:border-x border-blue-500 p-7 hover:bg-blue-600 cursor-pointer transition duration-300 ease-in-out"
-            >
-              <div class="flex justify-between items-center">
-                <img
-                  src="./assets/images/icon-trending-up.svg"
-                  alt="icon-trending-up.svg"
-                />
-                <h2 class="text-white font-inter text-2xl">3.1×</h2>
-              </div>
-              <div class="mt-40">
-                <p class="text-white font-inter text-lg">Graduation lift</p>
-                <p class="text-white/75 font-inter text-xs">
-                  Partner schools outperform national averages 3x.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 h-full"
+            id="stats-box"
+          ></div>
         </div>
       </main>
       <footer
